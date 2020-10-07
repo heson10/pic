@@ -3062,3 +3062,12 @@ details[open]>div.content>.highlight:last-child,details[open]>div.content>.note:
 	margin-bottom: 0
 }
 .DarkMode details summary p,.DarkMode details .content p,.DarkMode details .content ul li {color: rgb(75, 75, 75);}
+
+/* 文章链接 */
+article#Post_wysiwyg p a{
+	color: #c55f0b;
+}
+
+article#Post_wysiwyg p a:hover{
+	color: #008321;
+}
