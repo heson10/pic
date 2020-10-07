@@ -2178,7 +2178,9 @@ bilibili>iframe {
 }
 
 /* 自增暗黑模式 */
-
+.DarkMode article.message div.message_body p {
+	color:#848484!important;
+}
 .DarkMode .moren p{
 	color: #555;
 }
@@ -2206,6 +2208,11 @@ bilibili>iframe {
 .DarkMode .vhead span.vsys{
 	color: #6b6a6a;
 }
+
+.DarkMode .tag-list-item a,.DarkMode .tag-list-item span{
+	color: rgb(143, 143, 143)!important;
+}
+/* 短代码 */
 article emp {
     color: var(--color-text);
     border-bottom: 4px dotted #fe5f58;
@@ -2242,9 +2249,6 @@ article kbd {
 }
 
 a.forside_a:hover{color:#00947e;}
-.DarkMode .tag-list-item a,.DarkMode .tag-list-item span{
-	color: rgb(143, 143, 143)!important;
-}
 
 /* 归档页面 */
 div.timenode {
