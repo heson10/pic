@@ -944,3 +944,17 @@ searchFunc(path, 'local-search-input', 'local-search-result');
 			 $("body").removeClass("mobile-nav-open");
 			
 		 });
+
+function pjax_fancybox(){
+		 $('.md').each(function(i){
+			$(this).find('img').each(function(){
+			  if ($(this).parent().hasClass('isfancybox')) return;
+		
+			  var alt = this.alt;
+			  
+			  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" data-fancybox="gallery" class="isfancybox"></a>');
+			});
+		
+			
+ })};
+ pjax_fancybox();
