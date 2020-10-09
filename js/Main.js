@@ -948,10 +948,9 @@ searchFunc(path, 'local-search-input', 'local-search-result');
 function pjax_fancybox(){
 		 $('.md').each(function(i){
 			$(this).find('img').each(function(){
+			  $(this).addClass('lazyload');	
 			  if ($(this).parent().hasClass('isfancybox')) return;
-		
 			  var alt = this.alt;
-			  $(this).addClass('lazyload');
 			  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" data-fancybox="gallery" class="isfancybox"></a>');
 			});
 		
