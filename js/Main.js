@@ -951,7 +951,7 @@ function pjax_fancybox(){
 			  if ($(this).parent().hasClass('isfancybox')) return;
 		
 			  var alt = this.alt;
-			  
+			  $(this).addClass('lazyload');
 			  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" data-fancybox="gallery" class="isfancybox"></a>');
 			});
 		
