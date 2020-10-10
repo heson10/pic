@@ -776,9 +776,7 @@ function colortag(){
 		  loadScript('/js/issues.js');
 		}, 1);
 	  };
-	  $(function () {
-		loadIssuesJS();
-	  });
+	
 
 
 function dingwei(){
@@ -956,3 +954,4 @@ function pjax_fancybox(){
 			
  })};
  pjax_fancybox();
+
