@@ -513,7 +513,6 @@ rainbow-text, rainbow-text * {
 
 .message a {
 	color: currentColor;
-	text-decoration: underline;
 }
 
 .message.lv, .tags.lv {
