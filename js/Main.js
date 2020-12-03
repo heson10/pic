@@ -3,7 +3,7 @@
 var CuteenFunc = {
 	sidebar: function () {
 		var b;
-		(CUTEEN_SETTING.HEADROOM) ? b = 16 : b = 85
+		(CUTEEN_SETTING.HEADROOM) ? b = 316 : b = 535
 		if (0 < $("#sidebar").length) {
 			(new SidebarFollow()).init({
 				element: jQuery('.sidebar-2'),
