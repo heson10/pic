@@ -12,6 +12,17 @@ var CuteenFunc = {
 			});
 		}
 	},
+	sidebar2: function () {
+		var b;
+		(CUTEEN_SETTING.HEADROOM) ? b = 16 : b = 82
+		if (0 < $("#sidebar").length) {
+			(new SidebarFollow()).init({
+				element: jQuery('.sidebar-3'),
+				prevElement: jQuery('.sidebar-1'),
+				distanceToTop: b
+			});
+		}
+	},
 	QiPao: function () {
 		if (CUTEEN_SETTING.QIPAO) {
 			$('#hero').circleMagic({
@@ -427,7 +438,7 @@ Cuteen = {
 		CuteenFunc.SearchModel(); CuteenFunc.MobileBarAcc();
 		CuteenFunc.owo(); CuteenFunc.FixSomeStyle(); CuteenFunc.QiPao();
 		CuteenFunc.Toc(); CuteenFunc.NoCopy(); CuteenFunc.NavBgFix();
-		CuteenFunc.Acc(); CuteenFunc.Tab(); CuteenFunc.sidebar();
+		CuteenFunc.Acc(); CuteenFunc.Tab(); CuteenFunc.sidebar();CuteenFunc.sidebar2();
 		CuteenFunc.DarkModeChecked(); CuteenFunc.FixSidebarHeight();
 		CuteenFunc.highlightJsRender(); CuteenFunc.AjaxNext(); CuteenFunc.BackTop();
 	},
